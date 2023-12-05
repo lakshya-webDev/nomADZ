@@ -260,4 +260,18 @@ background: #FFF;
 .timeline-item.active {
   display: block;
 }
-
+.nav-link:focus, .nav-link:hover{
+  color:var(--color-crimson-100) !important;
+}
+.nav-link{
+  color:var(--color-white) !important;
+}
+.offcanvas-body{
+  overflow-y:unset !important;
+}
+.dropdown{
+  cursor:pointer;
+}
+.dropdown-menu {
+  z-index: 9999 !important;
+}

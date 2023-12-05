@@ -46,12 +46,31 @@
               height="40"></h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body overflow-unset">
           <!-- Your menu content goes here -->
           <ul class="nav flex flex-column">
-            <li class="nav-item"><a class="nav-link px-0" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-0" href="./index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link px-0" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link px-0" href="/services/">Services</a></li>
+            <li class="nav-item dropdown""> 
+              <button 
+              class="nav-link dropdown-toggle px-0" 
+              id="servicesDropdown"
+              data-bs-toggle="dropdown" 
+              >
+                Services
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="./services/rich-media-marketing.html">Rich media marketing</a></li>
+                <li><a class="dropdown-item" href="./services/social-media-marketing.html">Social media marketing</a></li>
+                <li><a class="dropdown-item" href="./services/affiliate-&-performance-marketing.html">Affiliate & performance marketing</a></li>
+                <li><a class="dropdown-item" href="./services/influencer-marketing.html">Influencer marketing</a></li>
+                <li><a class="dropdown-item" href="./services/media-buying.html">Media buying</a></li>
+                <li><a class="dropdown-item" href="./services/email-&-sms-marketing.html">Email & SMS marketing</a></li>
+                <li><a class="dropdown-item" href="./services//retargeting.html">Retargeting</a></li>
+                <li><a class="dropdown-item" href="./services/technology.html">Technology</a></li>
+                <!-- Add more services as needed -->
+              </ul>
+            </li>
             <li class="nav-item"><a class="nav-link px-0" href="#">Contact Us</a></li>
             <!-- Add more menu items as needed -->
           </ul>
@@ -296,9 +315,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
