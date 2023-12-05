@@ -4,7 +4,7 @@ body {
   font-family: var(--font-montserrat);
   height: 100vh; /* Make body take up full height of viewport */
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   /* fonts */
   --font-poppins: Poppins;
@@ -22,12 +22,10 @@ body {
   --font-size-3xl-8: 22.8px;
   --font-size-2xl-9: 21.9px;
   --font-size-3xl-1: 22.1px;
-  --font-size:1rem;
-  --font-size-xl:1.5rem;
-  --font-size-xxl:2.5rem;
-  --font-size-xxxl:3.5rem;
-  
-
+  --font-size: 1rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2.5rem;
+  --font-size-xxxl: 3.5rem;
 
   /* Colors */
   --color-black: #000;
@@ -43,20 +41,48 @@ body {
   --br-10xs: 3px;
   --br-8xs: 5px;
 }
-a:hover{
+a:hover {
   color: var(--color-crimson-100) !important;
 }
-.btn:focus{
+.btn:focus {
   box-shadow: none;
 }
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
   box-shadow: none !important;
-  border:none !important;
-  border-color:unset !important;
+  border: none !important;
+  border-color: unset !important;
 }
-button:focus{
+button:focus {
   box-shadow: none !important;
 }
-.text-glow{
+.text-glow {
   color: var(--color-crimson-200) !important;
+}
+.border_color {
+  border-color: #ffffff80 !important;
+  border-top: 2px solid;
+}
+.footer_text {
+  color: #9a9ea6;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.icons_css {
+  background: #de2461;
+  border-radius: 30px;
+  flex-shrink: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.progress-section {
+  height: 500px;
 }

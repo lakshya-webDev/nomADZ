@@ -1,69 +1,314 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="../styles/global.css" />
-  <link rel="stylesheet" href="../styles/index.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <body>
+    <div class="page-wrapper">
+      <!-- Header Section -->
+      <header class="container-fluid bg-transparent p-4">
+        <div class="container">
+          <div class="row">
+            <!-- Logo -->
+            <div class="col-6">
+              <a href="#" class="navbar-brand">
+                <img src="../public/brand-logo.png" alt="Logo" height="40" />
+              </a>
+            </div>
 
-</head>
-
-<body>
-  <div class="page-wrapper">
-    <!-- Header Section -->
-    <header class="container-fluid bg-transparent p-4">
-      <div class="container">
-        <div class="row">
-          <!-- Logo -->
-          <div class="col-6">
-            <a href="#" class="navbar-brand">
-              <img src="../public/brand-logo.png" alt="Logo" height="40">
-            </a>
+            <!-- Hamburger Icon -->
+            <div class="col-6 text-end">
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
           </div>
+        </div>
+      </header>
 
-          <!-- Hamburger Icon -->
-          <div class="col-6 text-end">
-            <button class="btn" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-              <span class="navbar-toggler-icon"></span>
+      <!-- Offcanvas Menu -->
+      <div
+        class="offcanvas offcanvas-end p-4"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            <img src="../public/brand-logo.png" alt="Logo" height="40" />
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Your menu content goes here -->
+          <ul class="nav flex flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/services/">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <!-- Add more menu items as needed -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-section">
+        <div class="container">
+          <div class="row">
+            <!-- Left Column for Title and Description -->
+            <div class="col-md-7">
+              <div class="site-title">
+                <h1>Social Media Marketing</h1>
+              </div>
+              <div class="hero-description">
+                <p class="text-white">
+                  Social media marketing is the art of crafting your brand's
+                  narrative and spreading it across the globe, creating a
+                  magnetic presence that attracts and captivates your audience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column for Image -->
+            <div class="col-md-5">
+              <img
+                src="../public/hero_image.svg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="connect-section px-3 py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="section-title">
+                <h2>
+                  Connect and <span class="text-glow">Engage</span> Your
+                  Audience with Precision
+                </h2>
+              </div>
+            </div>
+            <!-- slider -->
+            <div class="col-md-6">
+              <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <!-- Card 1 -->
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="card bg-transparent">
+                          <div class="image-wrapper">
+                            <img
+                              src="../public/research.png"
+                              class="card-img-top"
+                              alt="Image 1"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Research</h5>
+                            <p class="card-text">
+                              We dive deep into understanding your audience's
+                              interests and expectations, ensuring your message
+                              resonates perfectly.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card bg-transparent">
+                          <div class="image-wrapper">
+                            <img
+                              src="../public/plan.png"
+                              class="card-img-top"
+                              alt="Image 1"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Plan</h5>
+                            <p class="card-text">
+                              Our experience with top brands equips us to craft
+                              bespoke strategies and solutions for every aspect
+                              of your social media presence.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-section px-3 py-5">
+        <div class="container-fluid">
+          <div
+            id="carouselExampleDark"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-caption d-none d-md-block text-white">
+                  <h5 class="text-white">First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-caption d-none d-md-block text-white">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block text-white">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
       </div>
-    </header>
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border_color"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="footer_text">©2023., All Rights Reserved</span>
+        </div>
 
-    <!-- Offcanvas Menu -->
-    <div class="offcanvas offcanvas-end p-4" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="../public/brand-logo.png" alt="Logo" height="40"></h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <!-- Your menu content goes here -->
-        <ul class="nav flex flex-column">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/services/">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-          <!-- Add more menu items as needed -->
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3 icons_css">
+            <a class="text-white" href="#"><i class="bi bi-linkedin"></i></a>
+          </li>
+          <li class="ms-3 icons_css">
+            <a class="text-white" href="#"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="ms-3 icons_css">
+            <a class="text-white" href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="ms-3 icons_css">
+            <a class="text-white" href="#"><i class="bi bi-twitter-x"></i></a>
+          </li>
+          <li class="ms-3 icons_css">
+            <a class="text-white" href="#"><i class="bi bi-youtube"></i></a>
+          </li>
         </ul>
-      </div>
+      </footer>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
