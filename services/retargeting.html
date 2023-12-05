@@ -68,49 +68,10 @@
         <div class="offcanvas-body">
           <!-- Your menu content goes here -->
           <ul class="nav flex flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="servicesDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                data-bs-popper="none"
-                aria-expanded="false"
-              >
-                Services
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="servicesDropdown"
-                style="position: absolute; top: 100%; left: 0"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">Rich media marketing</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Social media marketing </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Affiliate & performance marketing</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Influencer marketing</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Media buying</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Email & sms marketing</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Retargeting</a></li>
-                <li><a class="dropdown-item" href="#">Technology</a></li>
-                <!-- Add more services as needed -->
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="/services/">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
@@ -218,45 +179,85 @@
       </div>
       <div class="progress-section px-3 py-5">
         <div class="container-fluid">
-
-          <div id="timelineCarousel" class="carousel slide timeline-carousel" data-bs-ride="carousel">
-            <!-- Indicators -->
-            <div class="d-flex align-items-center">
-              <ul class="timeline-indicators d-flex flex-column flex-shrink-2">
-                <li data-bs-target="#timelineCarousel" data-bs-slide-to="0" class="timeline-indicator active">
-                  <div class="timeline-indicator-progress"></div>
-                </li>
-                <li data-bs-target="#timelineCarousel" data-bs-slide-to="1" class="timeline-indicator">
-                  <div class="timeline-indicator-progress"></div>
-                </li>
-                <li data-bs-target="#timelineCarousel" data-bs-slide-to="2" class="timeline-indicator">
-                  <div class="timeline-indicator-progress"></div>
-                </li>
-                <li data-bs-target="#timelineCarousel" data-bs-slide-to="3" class="timeline-indicator">
-                  <div class="timeline-indicator-progress"></div>
-                </li>
-            </ul>
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner timeline-content">
-                  <div class="carousel-item timeline-item active">
-                      <h3>What is Lorem Ipsum?</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                  </div>
-                  <div class="carousel-item timeline-item">
-                      <h3>What is Lorem Ipsum?</h3>
-                      <p>TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  </div>
-                  <div class="carousel-item timeline-item">
-                      <h3>What is Lorem Ipsum?</h3>
-                      <p>TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  </div>
-                  <div class="carousel-item timeline-item">
-                      <h3>3000</h3>
-                      <p>TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  </div>
-              </div>
-             </div>             
+          <div
+            id="carouselExampleDark"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-caption d-none d-md-block text-white">
+                  <h5 class="text-white">First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-caption d-none d-md-block text-white">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block text-white">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
       <footer
@@ -284,10 +285,8 @@
         </li>
       </ul>
     </footer>
-      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/script.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
