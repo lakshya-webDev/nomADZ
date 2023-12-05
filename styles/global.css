@@ -83,6 +83,18 @@ button:focus {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+.icons_css > a:hover{
+  color: unset !important;
+}
 .progress-section {
   height: 500px;
+}
+
+@keyframes slideUp {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
 }
