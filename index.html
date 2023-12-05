@@ -170,27 +170,82 @@
     <div class="marketing-section px-3">
       <div class="container-fluid">
         <div class="d-flex align-items-start">
-          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-              type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-              type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
-              type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-              type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
-              type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-          </div>
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+          <div class="row">
+            <div class="col-md-4">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="meta-marketing-tab" data-bs-toggle="pill" data-bs-target="#meta-marketing"
+                  type="button" role="tab" aria-controls="meta-marketing-tab" aria-selected="true"> <span class="tab-icon-content"><div class="icon-wrapper">
+                    <img src="./public/meta-icon.svg" alt="meta-marketing"/>
+                    Meta Marketing  </div></span><img src="./public/meta-icon.svg" class="inactive-icon" alt="meta-marketing"/></button>
+                <button class="nav-link" id="facebook-marketing-tab" data-bs-toggle="pill" data-bs-target="#facebook-marketing"
+                  type="button" role="tab" aria-controls="facebook-marketing" aria-selected="false"><span class="tab-icon-content"><div class="icon-wrapper">
+                    <img src="./public/facebook-icon.svg"  alt="facebook-marketing"/>
+                  </div> Facebook Marketing</span><img src="./public/facebook-icon.svg" class="inactive-icon" alt="facebook-marketing"/></button>
+                <button class="nav-link" id="instagram-marketing-tab" data-bs-toggle="pill" data-bs-target="#instagram-marketing"
+                  type="button" role="tab" aria-controls="instagram-marketing" aria-selected="false"><span class="tab-icon-content"><div class="icon-wrapper">
+                    <img src="./public/instagram-icon.svg"  alt="instagram-marketing"/>
+                  </div> Instagram Marketing</span> <img src="./public/instagram-icon.svg" class="inactive-icon" alt="instagram-marketing"/></button>
+                <button class="nav-link" id="linkedin-marketing-tab" data-bs-toggle="pill" data-bs-target="#linkedin-marketing"
+                  type="button" role="tab" aria-controls="linkedin-marketing" aria-selected="false"><span class="tab-icon-content"><div class="icon-wrapper">
+                    <img src="./public/linkedin-icon.svg" alt="linkedin-marketing"/>
+                  </div> Linkedin Marketing</span> <img src="./public/linkedin-icon.svg" class="inactive-icon" alt="linkedin-marketing"/></button>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="meta-marketing" role="tabpanel" aria-labelledby="meta-marketing-tab"
+                  tabindex="0">
+                  <div class="content-area d-flex align-items-center gap-5">
+                    <div class="tab-image-wrapper ">
+                      <img src="./public/media-marketing.svg" class="tab-img-fluid" alt="media-marketing" />
+                    </div>
+                    <div class="content flex-fill">
+                      <h2 class="content-title">Meta Marketing</h2>
+                      <div class="content-description">
+                        <p>Leverage the power of Meta's vast virtual marketplace to target and engage with the right audience,
+                          expanding your brand's reach across various social networks.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="tab-pane fade" id="facebook-marketing" role="tabpanel" aria-labelledby="facebook-marketing-tab"
+                  tabindex="0">
+                  <div class="content-area d-flex align-items-center gap-5">
+                    <div class="tab-image-wrapper ">
+                      <img src="./public/media-marketing.svg" class="tab-img-fluid" alt="media-marketing" />
+                    </div>
+                    <div class="content flex-fill">
+                      <h2 class="content-title">Facebook Marketing</h2>
+                      <div class="content-description">
+                        <p>Leverage the power of Meta's vast virtual marketplace to target and engage with the right audience,
+                          expanding your brand's reach across various social networks.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="instagram-marketing" role="tabpanel" aria-labelledby="instagram-marketing-tab"
+                tabindex="0">
+                <div class="content-area d-flex align-items-center gap-5">
+                  <div class="tab-image-wrapper ">
+                    <img src="./public/media-marketing.svg" class="tab-img-fluid" alt="media-marketing" />
+                  </div>
+                  <div class="content flex-fill">
+                    <h2 class="content-title">Instagram Marketing</h2>
+                    <div class="content-description">
+                      <p>Leverage the power of Meta's vast virtual marketplace to target and engage with the right audience,
+                        expanding your brand's reach across various social networks.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="linkedin-marketing" role="tabpanel" aria-labelledby="linkedin-marketing-tab"
               tabindex="0">
-              <div class="content-area d-flex gap-5">
-                <div class="tab-image-wraper">
+              <div class="content-area d-flex align-items-center gap-5">
+                <div class="tab-image-wrapper ">
                   <img src="./public/media-marketing.svg" class="tab-img-fluid" alt="media-marketing" />
                 </div>
-                <div class="content">
-                  <h2 class="content-title">Media Marketing</h2>
+                <div class="content flex-fill">
+                  <h2 class="content-title">Linkedin Marketing</h2>
                   <div class="content-description">
                     <p>Leverage the power of Meta's vast virtual marketplace to target and engage with the right audience,
                       expanding your brand's reach across various social networks.</p>
@@ -198,14 +253,8 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
-              tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
-              tabindex="0">...</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
