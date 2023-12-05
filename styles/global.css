@@ -1,13 +1,15 @@
 body {
   margin: 0;
   line-height: normal;
+  font-family: var(--font-montserrat);
+  height: 100vh; /* Make body take up full height of viewport */
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 :root {
   /* fonts */
   --font-poppins: Poppins;
   --font-inter: Inter;
-  --font-sansserif: SansSerif;
+  --font-sansserif: Open Sans, sans-serif;
   --font-montserrat: Montserrat;
 
   /* font sizes */
@@ -20,6 +22,12 @@ body {
   --font-size-3xl-8: 22.8px;
   --font-size-2xl-9: 21.9px;
   --font-size-3xl-1: 22.1px;
+  --font-size:1rem;
+  --font-size-xl:1.5rem;
+  --font-size-xxl:2.5rem;
+  --font-size-xxxl:3.5rem;
+  
+
 
   /* Colors */
   --color-black: #000;
@@ -34,4 +42,21 @@ body {
   --br-70xl-4: 89.4px;
   --br-10xs: 3px;
   --br-8xs: 5px;
+}
+a:hover{
+  color: var(--color-crimson-100) !important;
+}
+.btn:focus{
+  box-shadow: none;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  box-shadow: none !important;
+  border:none !important;
+  border-color:unset !important;
+}
+button:focus{
+  box-shadow: none !important;
+}
+.text-glow{
+  color: var(--color-crimson-200) !important;
 }
