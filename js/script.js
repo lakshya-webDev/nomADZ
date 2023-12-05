@@ -17,3 +17,21 @@ function changeText() {
 }
 
 setInterval(changeText, 5000);
+
+$(document).ready(function () {
+    
+    $('#timelineCarousel').on('slide.bs.carousel', function (event) {
+      var index = $(event.relatedTarget).index();
+      $('.timeline-indicator').removeClass('active');
+      $('.timeline-indicator').eq(index).addClass('active');
+  
+      // Reset progress bar width
+      $('.timeline-indicator-progress').width(0);
+  
+      // Animate progress bar
+      $('.timeline-indicator.active .timeline-indicator-progress').animate({
+        width: '100%'
+      }, 5000); // Set the duration to match your slide interval
+    });
+  });
+  

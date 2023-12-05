@@ -148,3 +148,116 @@ background: #FFF;
   max-width: max-content;
   margin-bottom: 1rem;
 }
+/* carousel  */
+#carouselProgressIndicators .carousel-inner .carousel-item button{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-bottom: 4rem;
+}
+#carouselProgressIndicators .carousel-inner .active button{
+  background: #FBC50B;
+}
+
+.timeline-carousel {
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-indicator-progress {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FBC50B;
+  height: 4px;
+  width: 0;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.timeline-indicators {
+  position: relative;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  line-height: 1.66;
+  bottom: 0;
+  z-index: 11;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 5;
+}
+
+.timeline-indicator {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #888;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  margin-bottom: 4rem;
+}
+
+.timeline-indicator.active {
+  background-color: #FBC50B;
+  border: 2px solid #FBC50B;
+  position: relative; /* Add this line */
+}
+
+.timeline-indicator.active .timeline-indicator-progress {
+  width: 100%;
+}
+
+.timeline-indicator.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FBC50B;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.timeline-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.timeline-item {
+  text-align: center;
+  display: none;
+  padding: 20px;
+  color: var(--color-white);
+}
+
+.timeline-item p {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.timeline-item h3 {
+  font-family: var(--font-inter);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.timeline-item.active {
+  display: block;
+}
+
