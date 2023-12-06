@@ -102,3 +102,9 @@ button:focus {
 .site-title h1 {
   animation: slideUp 0.5ms ease-in-out;
 }
+
+section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}

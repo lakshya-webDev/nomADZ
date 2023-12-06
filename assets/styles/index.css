@@ -3,8 +3,16 @@
   min-height: 100%; 
   box-sizing: border-box; /* Include padding and border in total height */
 }
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #000  !important;
+}
 .navbar-toggler-icon{
-  background-image: url('../public/menu.svg') !important;
+  background-image: url('../menu.svg')!important;
 }
 .offcanvas.offcanvas-end{
   background: var(--color-black);
@@ -39,6 +47,7 @@ letter-spacing: -1.76px;
 .hero-description{
   max-width:800px;
   overflow: hidden;
+  margin-top: 2rem;
 }
 .hero-description p{
   font-size: var(--font-size-xl);
@@ -55,6 +64,7 @@ letter-spacing: -1.76px;
 }
 .hero-section{
   padding: 80px 0;
+  margin: 2rem 0;
 }
 .section-title > h2{
   font-size: var(--font-size-xxxl);
@@ -115,10 +125,10 @@ letter-spacing: -1.76px;
   display: inline-flex;
   align-items: center;
   color: #FBC50B;
-font-family: var(--font-montserrat);
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
+  font-family: var(--font-montserrat);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
 }
 .nav-pills .nav-link.active .tab-icon-content .icon-wrapper {
   display: inline-flex;
@@ -190,7 +200,7 @@ background: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-shrink: 5;
+  flex-shrink: 10;
 }
 
 .timeline-indicator {
@@ -216,6 +226,7 @@ background: #FFF;
 }
 .timeline-indicator{
   position: relative;
+  margin: 3rem;
 }
 .timeline-indicator.active::after {
   content: "";
@@ -248,6 +259,8 @@ background: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  max-width: 996px;
+  margin-inline: auto;
 }
 
 .timeline-item h3 {
