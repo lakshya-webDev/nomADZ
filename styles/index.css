@@ -215,7 +215,9 @@ background: #FFF;
 .timeline-indicator.active .timeline-indicator-progress {
   width: 100%;
 }
-
+.timeline-indicator{
+  position: relative;
+}
 .timeline-indicator.active::after {
   content: "";
   position: absolute;
@@ -223,7 +225,7 @@ background: #FFF;
   left: 50%;
   transform: translateX(-50%);
   background: #FBC50B;
-  height: 4px;
+  height: 14px;
   width: 100%;
   border-radius: 2px;
 }
@@ -275,3 +277,4 @@ background: #FFF;
 .dropdown-menu {
   z-index: 9999 !important;
 }
+

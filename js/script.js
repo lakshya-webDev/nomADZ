@@ -18,6 +18,22 @@ function changeText() {
 
 setInterval(changeText, 5000);
 
+
+setInterval(function() {
+  // Get the active tab
+  var activeTab = $('.nav-pills .active');
+
+  // Check if there's a next tab
+  var nextTab = activeTab.next('button.nav-link');
+
+  // If there is no next tab, select the first one
+  if (!nextTab.length) {
+    nextTab = $('.nav-pills button.nav-link').first();
+  }
+
+  // Trigger a click on the next tab
+  nextTab.click();
+}, 5000); // Change tabs every 5000 milliseconds (5 seconds)
 $(document).ready(function () {
     
     $('#timelineCarousel').on('slide.bs.carousel', function (event) {
@@ -29,9 +45,9 @@ $(document).ready(function () {
       $('.timeline-indicator-progress').width(0);
   
       // Animate progress bar
-      $('.timeline-indicator.active .timeline-indicator-progress').animate({
-        width: '100%'
-      }, 5000); // Set the duration to match your slide interval
+      // $('.timeline-indicator.active .timeline-indicator-progress').animate({
+      //   width: '100%'
+      // }, 5000); // Set the duration to match your slide interval
     });
   });
   
