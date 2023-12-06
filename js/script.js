@@ -1,3 +1,6 @@
+AOS.init({
+  duration: 3000
+});
 const textArray = [
     "At nomADZ Digital, India's premier social media marketing agency, we're experts in making your brand shine online.",
     "Our mastery in audience segmentation, social advertising, and staying ahead of social algorithm updates is your gateway to success.",
@@ -33,7 +36,7 @@ setInterval(function() {
 
   // Trigger a click on the next tab
   nextTab.click();
-}, 5000); // Change tabs every 5000 milliseconds (5 seconds)
+}, 3000); // Change tabs every 5000 milliseconds (5 seconds)
 $(document).ready(function () {
     
     $('#timelineCarousel').on('slide.bs.carousel', function (event) {
@@ -45,9 +48,9 @@ $(document).ready(function () {
       $('.timeline-indicator-progress').width(0);
   
       // Animate progress bar
-      // $('.timeline-indicator.active .timeline-indicator-progress').animate({
-      //   width: '100%'
-      // }, 5000); // Set the duration to match your slide interval
+      $('.timeline-indicator.active .timeline-indicator-progress').animate({
+        width: '100%'
+      }, 5000); // Set the duration to match your slide interval
     });
   });
   

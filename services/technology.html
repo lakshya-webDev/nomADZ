@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <link rel="stylesheet" href="../styles/global.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -98,7 +99,7 @@
 
       <div class="hero-section">
         <div class="container">
-          <div class="row">
+          <div class="row d-flex align-items-center">
             <!-- Left Column for Title and Description -->
             <div class="col-md-7">
               <div class="site-title">
@@ -138,7 +139,7 @@
             <!-- slider -->
             <div class="col-md-6">
               <div
-                id="carouselExample"
+                data-interval="3000" id="carouselExample"
                 class="carousel slide"
                 data-bs-ride="carousel"
               >
@@ -192,7 +193,7 @@
           </div>
         </div>
       </div>
-      <div class="progress-section px-3 py-5">
+      <div class="progress-section px-3 py-3">
         <div class="container-fluid">
 
           <div id="timelineCarousel" class="carousel slide timeline-carousel" data-bs-ride="carousel">
@@ -263,7 +264,8 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

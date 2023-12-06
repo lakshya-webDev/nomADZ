@@ -30,11 +30,10 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 .site-title > h1{
-  
 font-size: calc(var(--font-size-xxl) * 2) !important;
 font-style: normal;
 font-weight: 800;
-line-height: 103.85px; /* 107.267% */
+line-height: 100.85px; /* 107.267% */
 letter-spacing: -1.76px;
 }
 .hero-description{
@@ -54,7 +53,7 @@ letter-spacing: -1.76px;
   opacity: 0;
   transform: translateY(-20px);
 }
-.hero-section,.marketing-section{
+.hero-section{
   padding: 80px 0;
 }
 .section-title > h2{
@@ -116,7 +115,7 @@ letter-spacing: -1.76px;
   display: inline-flex;
   align-items: center;
   color: #FBC50B;
-font-family: var(--font-inter);
+font-family: var(--font-montserrat);
 font-size: 22px;
 font-style: normal;
 font-weight: 400;
@@ -203,7 +202,7 @@ background: #FFF;
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .timeline-indicator.active {
@@ -245,14 +244,14 @@ background: #FFF;
 }
 
 .timeline-item p {
-  font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
 }
 
 .timeline-item h3 {
-  font-family: var(--font-inter);
+  font-family: var(--font-montserrat);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;

@@ -2,9 +2,6 @@
 
 :root {
   /* fonts */
-  --font-poppins: Poppins;
-  --font-inter: Inter;
-  --font-sansserif: Open Sans, sans-serif;
   --font-montserrat: Montserrat;
 
   /* font sizes */
@@ -87,9 +84,9 @@ button:focus {
 .icons_css > a:hover{
   color: unset !important;
 }
-.progress-section {
-  height: 500px;
-}
+/* .progress-section {
+  min-height: 500px;
+} */
 
 @keyframes slideUp {
   0% {
@@ -98,4 +95,10 @@ button:focus {
   100% {
       transform: translateY(-100%);
   }
+}
+
+
+/* Apply the animation to the site title */
+.site-title h1 {
+  animation: slideUp 0.5ms ease-in-out;
 }
