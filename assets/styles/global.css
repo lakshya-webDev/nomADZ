@@ -104,7 +104,31 @@ button:focus {
 }
 
 section{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand > img{
+  height: 22px;
+}
+.offcanvas-body > .nav{
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.offcanvas-body .nav .nav-item::after {
+  content: "";
+  display: block;
+  min-width: 300px;
+  text-align: center;
+  height: 2px;
+  background-color: #fff;
+}
+
+
+.offcanvas-body .nav .nav-item .nav-link {
+ font-size: var(--font-size-xl);
+ text-align: center;
+ width:100%;
 }
