@@ -128,7 +128,7 @@ section{
 
 
 .offcanvas-body .nav .nav-item .nav-link {
- font-size: var(--font-size-xl);
+ font-size: 2rem;
  text-align: center;
  width:100%;
 }
