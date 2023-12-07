@@ -104,7 +104,7 @@ button:focus {
 }
 
 section{
-  height: 80vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
