@@ -295,3 +295,8 @@ background: #FFF;
 .nav.flex.flex-column .nav-item {
   width: 35%;
 }
+
+.justify-content-between {
+  justify-content: space-between!important;
+  align-items: center!important;
+}
