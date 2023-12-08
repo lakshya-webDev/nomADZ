@@ -184,7 +184,7 @@ background: #FFF;
   height: 4px;
   width: 0;
   border-radius: 2px;
-  transition: width 0.5s ease;
+  transition: width 0.5s ease-in-out;
 }
 
 .timeline-indicators {
@@ -227,7 +227,8 @@ background: #FFF;
 .timeline-indicator{
   position: relative;
   margin: 3rem;
-}carousel slide timeline-carousel pointer-event
+}
+.carousel .slide .timeline-carousel .vertical .pointer-event
 .timeline-indicator.active::after {
   content: "";
   position: absolute;
